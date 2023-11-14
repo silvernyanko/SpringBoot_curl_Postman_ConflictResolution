@@ -12,3 +12,5 @@ public class GreetController {
         return "Hello, World!";
     }
 }
+
+// まずはmainにmerge。そして"Hello, World!"に変化を加える。

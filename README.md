@@ -2,13 +2,12 @@
 
 
 
-
  * * * 
 
 
 ### curlの実行結果
 
-
+![assignment6_main_curlターミナル実行結果](https://github.com/silvernyanko/assignment6/assets/145736051/1a0250c1-e2d1-47f8-86a4-5fa2793885d3)
 
  * * * 
 

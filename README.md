@@ -1,6 +1,6 @@
 ### Postmanの実行結果
 
-
+![assignment6_main_Postman](https://github.com/silvernyanko/assignment6/assets/145736051/369172d6-68ac-4391-942d-fd40b785dbd5)
 
  * * * 
 

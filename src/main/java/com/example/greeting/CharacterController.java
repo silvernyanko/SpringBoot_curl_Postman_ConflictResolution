@@ -8,9 +8,9 @@ import java.util.List;
 @RestController
 public class CharacterController {
     @GetMapping("/character")
-    public List<Factions> getCharacter() {
+    public List<Faction> getCharacter() {
         return List.of(
-                new Factions ("麦わらの一味",
+                new Faction("麦わらの一味",
                         List.of (
                                 new Character("ルフィ", 19),
                                 new Character("ゾロ", 21),
@@ -24,7 +24,7 @@ public class CharacterController {
                                 new Character("ジンベエ", 46)
                         )
                 ),
-                new Factions("ライバル",
+                new Faction("ライバル",
                         List.of (
                                 new Character("シャンクス", 39),
                                 new Character("ティーチ", 40),
@@ -32,7 +32,7 @@ public class CharacterController {
                                 new Character("ロー", 26)
                         )
                 ),
-                new Factions("海軍",
+                new Faction("海軍",
                         List.of(
                                 new Character("サカズキ", 55),
                                 new Character("ガープ", 78),

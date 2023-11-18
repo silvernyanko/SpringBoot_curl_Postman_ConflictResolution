@@ -2,7 +2,7 @@ package com.example.greeting;
 
 import java.util.List;
 
-public class Factions {
+public class Faction {
     private String factionalName;
     private final List<Character> character;
 
@@ -14,7 +14,7 @@ public class Factions {
         return character;
     }
 
-    public Factions(String factionalName, List<Character> character) {
+    public Faction(String factionalName, List<Character> character) {
         this.factionalName = factionalName;
         this.character = character;
     }

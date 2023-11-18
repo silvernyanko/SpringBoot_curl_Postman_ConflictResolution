@@ -29,6 +29,7 @@ curl --location 'http://localhost:8080/character'
 
 ## curlをターミナルで確認した結果
 
+``` 
 StatusCode        : 200
 StatusDescription : 
 Content           : [{"factionalName":"éº¦ã　　　//以下コピペ不可
@@ -45,6 +46,7 @@ InputFields       : {}
 Links             : {}
 ParsedHtml        : mshtml.HTMLDocumentClass
 RawContentLength  : 676
+``` 
 
 
  * * * 

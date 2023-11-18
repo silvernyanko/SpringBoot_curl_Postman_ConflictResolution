@@ -17,7 +17,103 @@
 
 ## Postmanの実行結果のスクリーンショット
 
+![greeting – GreetingApplication java  greeting main  2023_11_18 20_02_14](https://github.com/silvernyanko/assignment6/assets/145736051/82d6fd54-31b7-42a5-b1c3-735abec2d202)
 
+
+ * * * 
+
+## PostmanのBodyの詳細(JSON)
+
+<details><summary>PostmanのBodyの詳細(JSON)</summary>
+
+```
+[
+    {
+        "factionalName": "麦わらの一味",
+        "character": [
+            {
+                "name": "ルフィ",
+                "age": 19
+            },
+            {
+                "name": "ゾロ",
+                "age": 21
+            },
+            {
+                "name": "ナミ",
+                "age": 20
+            },
+            {
+                "name": "ウソップ",
+                "age": 19
+            },
+            {
+                "name": "サンジ",
+                "age": 21
+            },
+            {
+                "name": "チョッパー",
+                "age": 17
+            },
+            {
+                "name": "ロビン",
+                "age": 30
+            },
+            {
+                "name": "フランキー",
+                "age": 36
+            },
+            {
+                "name": "ブルック",
+                "age": 90
+            },
+            {
+                "name": "ジンベエ",
+                "age": 46
+            }
+        ]
+    },
+    {
+        "factionalName": "ライバル",
+        "character": [
+            {
+                "name": "シャンクス",
+                "age": 39
+            },
+            {
+                "name": "ティーチ",
+                "age": 40
+            },
+            {
+                "name": "キッド",
+                "age": 23
+            },
+            {
+                "name": "ロー",
+                "age": 26
+            }
+        ]
+    },
+    {
+        "factionalName": "海軍",
+        "character": [
+            {
+                "name": "サカズキ",
+                "age": 55
+            },
+            {
+                "name": "ガープ",
+                "age": 78
+            },
+            {
+                "name": "コビー",
+                "age": 18
+            }
+        ]
+    }
+]
+```
+</details>
 
  * * * 
 
@@ -52,5 +148,7 @@ RawContentLength  : 676
  * * * 
 
 ## curlの実行結果のスクリーンショット
+
+![greeting – GreetingApplication java  greeting main  2023_11_18 19_36_57](https://github.com/silvernyanko/assignment6/assets/145736051/e45310f9-6587-4df0-95c6-d9649dfda7d6)
 
 

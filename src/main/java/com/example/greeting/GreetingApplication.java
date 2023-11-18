@@ -10,3 +10,4 @@ public class GreetingApplication {
 		SpringApplication.run(GreetingApplication.class, args);
 	}
 }
+

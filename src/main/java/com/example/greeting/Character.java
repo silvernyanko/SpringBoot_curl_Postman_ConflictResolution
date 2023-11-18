@@ -3,12 +3,10 @@ package com.example.greeting;
 public class Character {
     private String name;
     private int age;
-    private double bounty;
 
-    public Character(String name, int age, double bounty) {
+    public Character(String name, int age) {
         this.name = name;
         this.age = age;
-        this.bounty = bounty;
     }
     public String getName() {
         return this.name;
@@ -17,8 +15,5 @@ public class Character {
     public int getAge() {
         return this.age;
     }
-
-    public double getBounty() {
-        return this.bounty;
-    }
 }
+

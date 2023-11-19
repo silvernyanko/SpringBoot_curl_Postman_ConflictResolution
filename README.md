@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-### Postmanの実行結果
-
-![assignment6_main_Postman](https://github.com/silvernyanko/assignment6/assets/145736051/369172d6-68ac-4391-942d-fd40b785dbd5)
-
- * * * 
-
-
-### curlの実行結果
-
-![assignment6_main_curlターミナル実行結果](https://github.com/silvernyanko/assignment6/assets/145736051/1a0250c1-e2d1-47f8-86a4-5fa2793885d3)
-
- * * * 
-
-
-### curlのURL
-
-curl --location 'http://localhost:8080/greet'
-=======
 ## 概要
 
 ### mainブランチ
@@ -32,20 +13,58 @@ curl --location 'http://localhost:8080/greet'
 - キャラクターの名前と年齢を出力表示させるファイル。
 - キャラクターを派閥ごとに分類して、リストに振り分けた。
 
+### featureブランチ
+- mainブランチとcharacterブランチの間の、README.mdにて発生したコンフリクト解決用ブランチ。以下コンフリクト解決手順。
+- スタートがmainブランチの状態で、「git branch -b feature」で、featureブランチ(mainブランチから派生)を作成ながら切り替える。
+- 上の手順から、mainブランチの内容はfeatureブランチにmerge済み。
+- origin characterブランチの内容を、featureブランチにfetchする。
+- mergeができなかったので、「git status」でステージングエリアを確認して、「git add README.md」で追加。
+- commitで変更内容を書いて、logを確認後、「git merge character」で、featureブランチにcharacterブランチの内容をmergeできた。
+- 「git push origin feature」でリモートのfeatureブランチの変更内容をpush。
+- 「git checkout main」→「git merge feature」で、ローカルのmainブランチに、featureブランチの内容をmergeした。
+- 「git push origin main -u」でリモートのmainブランチに変更内容をpushすることができた。
+
+
+
+
+
  * * * 
 
-## Postmanの実行結果のスクリーンショット
 
-![greeting – GreetingApplication java  greeting main  2023_11_18 20_02_14](https://github.com/silvernyanko/assignment6/assets/145736051/82d6fd54-31b7-42a5-b1c3-735abec2d202)
->>>>>>> character
+
+
+
+## （1）"Hello, World!"出力表示するファイルをmainブランチにpush
+
+
+
+### Postmanの実行結果
+
+![assignment6_main_Postman](https://github.com/silvernyanko/assignment6/assets/145736051/369172d6-68ac-4391-942d-fd40b785dbd5)
 
 
  * * * 
 
-<<<<<<< HEAD
 
-### curlをターミナルで打ち込んで返ってきた結果
+### curlの実行結果
 
+![assignment6_main_curlターミナル実行結果](https://github.com/silvernyanko/assignment6/assets/145736051/1a0250c1-e2d1-47f8-86a4-5fa2793885d3)
+
+
+ * * * 
+
+
+### curlのURL
+
+curl --location 'http://localhost:8080/greet'
+
+
+ * * * 
+
+
+### curlをターミナルで確認した結果
+
+```
 StatusCode        : 200                                                                                                                    
 StatusDescription :                                                                                                                        
 Content           : Hello, World!                                                                                                          
@@ -59,7 +78,27 @@ Date: Fri, 17 Nov 2023 13:15:59 GMT
                     Hello, World!                                                                                                          
 Forms             : {}                                                                                                                     
 Headers           : {[Keep-Alive, timeout=60], [Connection, keep-alive], [Content-Length, 13], [Content-Type, text/plain;charset=UTF-8]...}
-=======
+``` 
+
+
+ * * * 
+
+
+
+
+
+## （2）内容変更したファイルをmainブランチにmerge
+
+
+### Postmanの実行結果のスクリーンショット
+
+![greeting – GreetingApplication java  greeting main  2023_11_18 20_02_14](https://github.com/silvernyanko/assignment6/assets/145736051/82d6fd54-31b7-42a5-b1c3-735abec2d202)
+
+
+
+ * * * 
+
+
 ## PostmanのBodyの詳細(JSON)
 
 <details><summary>PostmanのBodyの詳細(JSON)</summary>
@@ -193,5 +232,5 @@ RawContentLength  : 676
 
 ![greeting – GreetingApplication java  greeting main  2023_11_18 19_36_57](https://github.com/silvernyanko/assignment6/assets/145736051/e45310f9-6587-4df0-95c6-d9649dfda7d6)
 
->>>>>>> character
+
 

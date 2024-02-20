@@ -1,38 +1,11 @@
+# SpringBoot_curl_Postman_ConflictResolution
+
 ## 概要
-
-### mainブランチ
-"Hello, World!"をSpringBootで出力させるファイル。
-
-### greetingブランチ
-- 作業過程で使ったブランチ。
-- 当初はmainブランチに変更を加えたものをこちらで表示させる予定だった。
-- しかし、ブランチの名前と内容が合わなかったので、ローカルのブランチ名を変更して別ブランチでpushした。
--  ~~今は消しても問題ない。~~ 作業の過程を残すために残している。
-
-### characterブランチ
-- キャラクターの名前と年齢を出力表示させるファイル。
-- キャラクターを派閥ごとに分類して、リストに振り分けた。
-
-### featureブランチ
-- mainブランチとcharacterブランチの間の、README.mdにて発生したコンフリクト解決用ブランチ。以下コンフリクト解決手順。
-- スタートがmainブランチの状態で、「git branch -b feature」で、featureブランチ(mainブランチから派生)を作成ながら切り替える。
-- 上の手順から、mainブランチの内容はfeatureブランチにmerge済み。
-- origin characterブランチの内容を、featureブランチにfetchする。
-- mergeができなかったので、「git status」でステージングエリアを確認して、「git add README.md」で追加。
-- commitで変更内容を書いて、logを確認後、「git merge character」で、featureブランチにcharacterブランチの内容をmergeできた。
-- 「git push origin feature」でリモートのfeatureブランチの変更内容をpush。
-- 「git checkout main」→「git merge feature」で、ローカルのmainブランチに、featureブランチの内容をmergeした。
-- 「git push origin main -u」でリモートのmainブランチに変更内容をpushすることができた。
-
-
-
-
+- Spring Bootで"Hello, World!"を出力表示するファイルを作成する。  
+- その後、ファイル内容変更してmainブランチにmergeする。  
+- ※Gitで起こしてしまったコンフリクトを解決する。  
 
  * * * 
-
-
-
-
 
 ## （1）"Hello, World!"出力表示するファイルをmainブランチにpush
 
@@ -234,3 +207,32 @@ RawContentLength  : 676
 
 
 
+ * * * 
+
+## コンフリクト解決
+
+### 各ブランチの説明
+
+#### mainブランチ
+"Hello, World!"をSpringBootで出力させるファイル。
+
+#### greetingブランチ
+- 作業過程で使ったブランチ。
+- 当初はmainブランチに変更を加えたものをこちらで表示させる予定だった。
+- しかし、ブランチの名前と内容が合わなかったので、ローカルのブランチ名を変更して別ブランチでpushした。
+-  ~~今は消しても問題ない。~~ 作業の過程を残すために残している。
+
+#### characterブランチ
+- キャラクターの名前と年齢を出力表示させるファイル。
+- キャラクターを派閥ごとに分類して、リストに振り分けた。
+
+#### featureブランチ
+- mainブランチとcharacterブランチの間の、README.mdにて発生したコンフリクト解決用ブランチ。以下コンフリクト解決手順。
+- スタートがmainブランチの状態で、「git branch -b feature」で、featureブランチ(mainブランチから派生)を作成ながら切り替える。
+- 上の手順から、mainブランチの内容はfeatureブランチにmerge済み。
+- origin characterブランチの内容を、featureブランチにfetchする。
+- mergeができなかったので、「git status」でステージングエリアを確認して、「git add README.md」で追加。
+- commitで変更内容を書いて、logを確認後、「git merge character」で、featureブランチにcharacterブランチの内容をmergeできた。
+- 「git push origin feature」でリモートのfeatureブランチの変更内容をpush。
+- 「git checkout main」→「git merge feature」で、ローカルのmainブランチに、featureブランチの内容をmergeした。
+- 「git push origin main -u」でリモートのmainブランチに変更内容をpushすることができた。
